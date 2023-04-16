@@ -11,6 +11,7 @@ function App() {
       { name: "Cycling" },
       { name: "Walking" },
       { name: "Writing" },
+      { name: "Jumping" },
     ],
     "2023-04-15": [{ name: "Writing" }],
   });
@@ -19,7 +20,11 @@ function App() {
     setDate(selectedDate);
     setItems((items) => {
       let list = { ...items };
-      list[selectedDate] = [{ name: "Cycling" }, { name: "Walking" }, { name: "Running" }];
+      list[selectedDate] = [
+        { name: "Cycling" },
+        { name: "Walking" },
+        { name: "Running" },
+      ];
       return { ...list };
     });
     setIsCal(false);
