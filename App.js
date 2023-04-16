@@ -19,7 +19,7 @@ function App() {
     setDate(selectedDate);
     setItems((items) => {
       let list = { ...items };
-      list[selectedDate] = [{ name: "Cycling" }, { name: "Walking" }];
+      list[selectedDate] = [{ name: "Cycling" }, { name: "Walking" }, { name: "Running" }];
       return { ...list };
     });
     setIsCal(false);
