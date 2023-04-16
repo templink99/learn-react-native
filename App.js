@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
 export default App;
 
 /*
+Test
 import React, {useState} from 'react';
 import { StyleSheet, Text, View } from "react-native";
 import { Calendar, LocaleConfig } from "react-native-calendars";
