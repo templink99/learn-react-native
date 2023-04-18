@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, StyleSheet, View } from "react-native";
 import { Calendar } from "react-native-calendars";
 
-const Cali = (props) => {
+const CalendarScreen = (props) => {
   const onDateSelected = (data) => {
     console.log(data);
     // 2022-12-01
@@ -11,9 +11,9 @@ const Cali = (props) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.overlay}>
-        <Calendar onDayPress={onDateSelected} />
-      </View>
+      {/* <View style={styles.overlay}> */}
+      <Calendar onDayPress={onDateSelected} />
+      {/* </View> */}
     </SafeAreaView>
   );
 };
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Cali;
+export default CalendarScreen;

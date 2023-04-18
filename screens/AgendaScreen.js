@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { Agenda } from "react-native-calendars";
 
-function Agen({ selectedDate, items, onDayChange }) {
+function AgendaScreen({ selectedDate, items, onDayChange }) {
   const onDayPress = (date) => {
     onDayChange(date.dateString);
   };
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Agen;
+export default AgendaScreen;
